@@ -10,13 +10,12 @@ public enum Tag {
     OL_START("<ol>"),        // нумерованный список
     OL_END("</ol>"),
     LI_START("<li>"),
-    LI_END("</li>")
-    ;    // пункт списка внутри списка
+    LI_END("</li>");    // пункт списка внутри списка
 
     String name;
 
-    Tag(String name ){
-        this.name=name;
+    Tag(String name) {
+        this.name = name;
     }
 
 }

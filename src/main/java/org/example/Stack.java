@@ -3,13 +3,13 @@ package org.example;
 import java.util.ArrayList;
 
 public class Stack {
-    private ArrayList <Lexeme> stack ;
+    private ArrayList<Lexeme> stack;
 
-    public Stack (){
-        this.stack=new ArrayList<>();
+    public Stack() {
+        this.stack = new ArrayList<>();
     }
 
-    public void push (Lexeme lexeme){
+    public void push(Lexeme lexeme) {
         stack.add(lexeme);
     }
 
@@ -17,10 +17,10 @@ public class Stack {
         return stack;
     }
 
-    public Lexeme pop (){
-    Lexeme tempLexeme=stack.get(stack.size()-1);
-    stack.remove(stack.size()-1);
-    return tempLexeme;
+    public Lexeme pop() {
+        Lexeme tempLexeme = stack.get(stack.size() - 1);
+        stack.remove(stack.size() - 1);
+        return tempLexeme;
 
     }
 
